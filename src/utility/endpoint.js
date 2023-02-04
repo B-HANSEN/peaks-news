@@ -1,5 +1,5 @@
 // import env.api_key
-const key = '9fb2a69b-0046-437c-b8f8-4962459d2092';
+const key = process.env.API_KEY;
 const url = `https://content.guardianapis.com/search`;
 
 export const getArticles = async () => {
