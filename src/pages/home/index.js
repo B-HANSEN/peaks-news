@@ -1,11 +1,8 @@
-// import here:
-
-// header
+import { Link } from 'react-router-dom';
 import TopStories from '../../components/topStories';
 import Sorter from '../../components/sorter';
 import Categories from '../../components/categories';
-// view bookmark button & filter
-// sport section
+
 // footer component with toast (added bookmark & removed bookmark) TODO: check if footer should handle the toast!
 
 // Content area is the main section for showing app content, this will be changed according to the page that is opened, which includes:
@@ -16,10 +13,10 @@ import Categories from '../../components/categories';
 const Home = () => {
 	return (
 		<div>
+			<Link to='bookmarks'>Click to view Bookmarks Page</Link>
+			<p />
+			<Link to='searchResults'>Click to view Search Results Page</Link>
 			<TopStories />
-			<Sorter />
-			<p>view bookmark button</p>
-			<Categories />
 		</div>
 	);
 };

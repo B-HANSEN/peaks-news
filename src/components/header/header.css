@@ -1,0 +1,31 @@
+.rectangle {
+	color: white;
+	background: #09357b;
+	height: 63px;
+	min-width: 1440px;
+	left: 0px;
+	top: 0px;
+	border-radius: 0px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.rectangle__peaksLogo {
+	position: absolute;
+	left: 2.33%;
+	right: 4.84%;
+	top: 30.31%;
+	bottom: 6.05%;
+	/* background: #ffffff; */
+}
+
+.rectangle__theLogo {
+	position: absolute;
+	left: 24.22%;
+	right: 42.57%;
+	top: 6.39%;
+	bottom: 57.72%;
+}
