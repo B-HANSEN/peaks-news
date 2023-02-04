@@ -1,4 +1,4 @@
-// import env.api_key
+// import env.API_KEY
 const key = process.env.API_KEY;
 const url = `https://content.guardianapis.com/search`;
 
