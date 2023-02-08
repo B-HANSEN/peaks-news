@@ -1,0 +1,133 @@
+.article__bookmark {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 12px 4px;
+	gap: 6px;
+	position: absolute;
+	min-width: 152px;
+	height: 30px;
+	left: 165px;
+	top: 189px;
+	background: #09357b;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.06);
+	border-radius: 4px;
+}
+
+.article__bookmark--icon {
+	width: 18px;
+	height: 18px;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.article__bookmark--text {
+	text-align: left;
+	min-width: 104px;
+	height: 22px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.3px;
+	text-transform: uppercase;
+	color: #ffffff;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
+.article__timestamp {
+	position: absolute;
+	min-width: 168px;
+	height: 31px;
+	left: 165px;
+	top: 237px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 31px;
+	letter-spacing: 0.83px;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.article__content {
+	position: absolute;
+	width: 1111px;
+	height: 1055px;
+	left: 164px;
+	top: 278px;
+}
+
+.article__title {
+	width: 635px;
+	height: 117px;
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 34px;
+	line-height: 39px;
+	letter-spacing: 0.07px;
+	color: rgba(0, 0, 0, 0.87);
+	margin: 10px 0;
+}
+
+.article__subtitle {
+	top: 127px;
+	height: 78px;
+	width: 635px;
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+	letter-spacing: 0.07px;
+	color: rgba(0, 0, 0, 0.87);
+	margin: 50px 0 0;
+}
+
+.article__line {
+	position: absolute;
+	height: 2px;
+	width: 636px;
+	left: 0.5px;
+	top: 219.25px;
+	border-radius: 0px;
+
+	mix-blend-mode: normal;
+	opacity: 0.2;
+	border: 1px solid #979797;
+	margin: 14.25px 0 13.75px;
+}
+
+.article__body {
+	display: flex;
+}
+
+.article__body--text {
+	height: 820px;
+	width: 635px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.1px;
+	color: rgba(0, 0, 0, 0.87);
+	/* margin-top: 30px; */
+}
+
+.article__body__image {
+	position: absolute;
+	left: 59.95%;
+	right: 0%;
+	top: 22.27%;
+	bottom: 48.06%;
+}

@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import Footer from '../../components/footer';
+import Header from '../../components/header';
 import TopStories from '../../components/topStories';
 import Sorter from '../../components/sorter';
 import Categories from '../../components/categories';
@@ -13,10 +15,9 @@ import Categories from '../../components/categories';
 const Home = () => {
 	return (
 		<div>
-			<Link to='bookmarks'>Click to view Bookmarks Page</Link>
-			<p />
-			<Link to='searchResults'>Click to view Search Results Page</Link>
+			<Header />
 			<TopStories />
+			<Footer />
 		</div>
 	);
 };

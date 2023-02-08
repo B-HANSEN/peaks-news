@@ -6,6 +6,7 @@ const searchResults = () => {
 			<Link to='/'>Click to view Home Page</Link>
 			<p />
 			<Link to='/article'>Click to view Article Page</Link>
+			<Link to='/bookmarks'>Click to view Article Page</Link>
 			<h1>Search Results Page</h1>
 			<p>Bookmark button</p>
 		</div>

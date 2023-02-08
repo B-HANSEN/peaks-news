@@ -1,31 +1,49 @@
-.rectangle {
-	color: white;
-	background: #09357b;
-	height: 63px;
-	min-width: 1440px;
+.header {
+	position: absolute;
+	width: 1440px;
+	height: 126px;
 	left: 0px;
 	top: 0px;
-	border-radius: 0px;
+}
+
+.rectangle {
 	position: absolute;
 	left: 0%;
 	right: 0%;
 	top: 0%;
 	bottom: 0%;
+	background: #09357b;
+}
+
+.logo__white {
+	position: absolute;
+	height: 56px;
+	width: 142px;
+	left: 165px;
+	top: 31px;
+}
+
+.group {
+	position: absolute;
+	height: 49.033485412597656px;
+	width: 131.8184814453125px;
+	left: 3.310546875px;
+	top: 3.57904052734375px;
 }
 
 .rectangle__peaksLogo {
 	position: absolute;
-	left: 2.33%;
-	right: 4.84%;
-	top: 30.31%;
-	bottom: 6.05%;
-	/* background: #ffffff; */
+	height: 35.636356353759766px;
+	width: 131.8184814453125px;
+	left: 3.310546875px;
+	top: 16.9761962890625px;
+	border-radius: 0px;
 }
 
 .rectangle__theLogo {
 	position: absolute;
-	left: 24.22%;
-	right: 42.57%;
-	top: 6.39%;
-	bottom: 57.72%;
+	height: 20.095693588256836px;
+	width: 47.15483093261719px;
+	left: 34.3896484375px;
+	top: 3.57904052734375px;
 }
