@@ -1,0 +1,64 @@
+.bookmark__add {
+	position: absolute;
+	width: 1440px;
+	height: 32px;
+	background: #ffffff;
+	z-index: 1000;
+	left: 0px;
+	top: 1837px;
+}
+
+.bookmark__add--group8 {
+	width: 1440px;
+	height: 32px;
+	left: 0px;
+	top: 0px;
+}
+
+.bookmark__add--rectangle {
+	width: 1440px;
+	height: 32px;
+	left: 0px;
+	top: 0px;
+	background: #388e3c;
+}
+
+.bookmark__remove--rectangle {
+	width: 1440px;
+	height: 32px;
+	left: 0px;
+	top: 0px;
+	background: #d32f2f;
+}
+
+.bookmark__add--group7 {
+	position: absolute;
+	width: 250px;
+	height: 24px;
+	left: 465px;
+	top: 4px;
+}
+
+.bookmark__add--icon {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	left: 0px;
+	top: 3px;
+}
+
+.bookmark__add--text {
+	position: absolute;
+	height: 24px;
+	left: 13.19%;
+	right: 0%;
+	top: calc(50% - 24px / 2);
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.3px;
+	text-transform: uppercase;
+	color: #ffffff;
+}

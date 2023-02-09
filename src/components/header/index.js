@@ -1,8 +1,3 @@
-// Given a loaded website, on any pages
-// When: I click on the Peaks Logo
-// Then: the browser should navigate to the home page.
-
-// import search bar
 import Peaks from '../../assets/Peaks.png';
 import The from '../../assets/The.png';
 import { Link } from 'react-router-dom';

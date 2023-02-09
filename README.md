@@ -1,17 +1,21 @@
-#### The Peaks News App
+# The Peaks News App
 
 ### Available Scripts
 
 In the project directory, you can run:
+
+```shell
+npm install
+```
+
+In src/utility/endpoint.js, please provide your API_KEY to address the endpoint from guardianapis.com
 
 ## npm start
 
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in your browser.
 
-Provide a .env file with a personal token for the Guardian website.
-
-#### Information and status update about pages
+## Information and status update about pages
 
 ### Home Page
 
@@ -28,8 +32,9 @@ To not show a deviation of +6 hours, the standard UTC is rendered instead.
 
 Pending: ThePeaks logo for articles without thumbnails.
 
-### Boomark Page
+### Bookmark Page
 
+Fully functional, using the browser's local storage to persist the bookmarks.
 Pending: functionality for sorter
 
 ### Search Results Page

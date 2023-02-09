@@ -1,8 +1,8 @@
 .reactangle__copy {
-	position: absolute;
+	position: fixed;
 	width: 1440px;
-	height: 243px;
+	height: 60px;
 	left: 0px;
-	top: 1626px;
+	bottom: 0px;
 	background: #09357b;
 }
