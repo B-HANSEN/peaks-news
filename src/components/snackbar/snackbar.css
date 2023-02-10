@@ -1,11 +1,10 @@
 .bookmark__add {
-	position: absolute;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
 	width: 1440px;
 	height: 32px;
 	background: #ffffff;
-	z-index: 1000;
-	left: 0px;
-	top: 1837px;
 }
 
 .bookmark__add--group8 {

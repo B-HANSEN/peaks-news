@@ -1,3 +1,7 @@
+.landing__page {
+	min-height: 1700px;
+}
+
 .topStories {
 	position: absolute;
 	width: 276px;
@@ -119,8 +123,8 @@
 	font-family: 'Georgia';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 24px;
-	line-height: 31px;
+	font-size: 22px;
+	line-height: 25px;
 	color: #ffffff;
 	padding: 10px 10px 0px;
 }
@@ -168,8 +172,8 @@
 	font-family: 'Georgia';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 18px;
-	line-height: 27px;
+	font-size: 14px;
+	line-height: 22px;
 	letter-spacing: 0.063px;
 	color: #ffffff;
 	padding: 5px 10px 14px;
@@ -201,8 +205,8 @@
 	font-family: 'Georgia';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 18px;
-	line-height: 27px;
+	font-size: 14px;
+	line-height: 22px;
 	letter-spacing: 0.063px;
 	color: #ffffff;
 	padding: 5px 10px 14px;
@@ -235,10 +239,11 @@
 	font-family: 'Georgia';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 18px;
-	line-height: 27px;
+	font-size: 14px;
+	line-height: 22px;
 	letter-spacing: 0.063px;
 	color: #ffffff;
+	padding: 5px 10px 14px;
 }
 
 .card3__noimage--rectangle__copy {
@@ -283,8 +288,8 @@
 	font-family: 'Georgia';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 20px;
-	line-height: 29px;
+	font-size: 14px;
+	line-height: 22px;
 	letter-spacing: 0.07px;
 	color: #ffffff;
 	padding: 5px 10px 14px;
@@ -299,10 +304,11 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 12px;
+	line-height: 18px;
 	letter-spacing: 0.1px;
 	color: #ffffff;
+	margin: auto 10px auto;
 }
 
 .card4__copy {
@@ -332,8 +338,8 @@
 	font-family: 'Georgia';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 20px;
-	line-height: 29px;
+	font-size: 14px;
+	line-height: 22px;
 	letter-spacing: 0.07px;
 	color: #ffffff;
 }
@@ -347,8 +353,8 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 12px;
+	line-height: 18px;
 	letter-spacing: 0.1px;
 	color: #ffffff;
 }
@@ -380,8 +386,8 @@
 	font-family: 'Georgia';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 20px;
-	line-height: 29px;
+	font-size: 14px;
+	line-height: 22px;
 	letter-spacing: 0.07px;
 	color: #ffffff;
 }
@@ -395,8 +401,8 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 12px;
+	line-height: 18px;
 	letter-spacing: 0.1px;
 	color: #ffffff;
 }
@@ -458,8 +464,8 @@
 	font-family: 'Georgia';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 20px;
-	line-height: 29px;
+	font-size: 14px;
+	line-height: 22px;
 	letter-spacing: 0.07px;
 	color: #ffffff;
 }
@@ -489,8 +495,8 @@
 	font-family: 'Georgia';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 20px;
-	line-height: 29px;
+	font-size: 14px;
+	line-height: 22px;
 	letter-spacing: 0.07px;
 	color: #ffffff;
 }
@@ -520,8 +526,8 @@
 	font-family: 'Georgia';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 20px;
-	line-height: 29px;
+	font-size: 14px;
+	line-height: 22px;
 	letter-spacing: 0.07px;
 	color: #ffffff;
 }

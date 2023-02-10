@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Empty_thumbnail from '../../assets/Empty_thumbnail.png';
 import Footer from '../../components/footer';
 import Header from '../../components/header';
 import './bookmarks.css';
@@ -26,7 +27,7 @@ const Bookmarks = () => {
 					<article className='bookmarks__contents--card4'>
 						<div className=''>
 							<img
-								src={article[1]}
+								src={article[1] || Empty_thumbnail}
 								style={{ height: 216, width: 350 }}
 								alt='thumbnail'
 							/>

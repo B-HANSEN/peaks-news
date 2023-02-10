@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Bookmark from '../../assets/Bookmark.png';
+import Empty_thumbnail from '../../assets/Empty_thumbnail.png';
 import Loader from '../../components/loader';
 import { getCategoryStories, getTopStories } from '../../utility/endpoint';
 import './topStories.css';
 
 const TopStories = () => {
-	const [loading, setLoading] = useState();
+	const [loading, setLoading] = useState(true);
 	const [topStories, setTopStories] = useState([]);
 	const [categoryStories, setCategoryStories] = useState([]);
 	const [filter, setFilter] = useState('new');
@@ -17,7 +18,7 @@ const TopStories = () => {
 			let articlesByCategory = await getCategoryStories(filter);
 			setTopStories(topStoryArticles.results);
 			setCategoryStories(articlesByCategory.results);
-			// TODO: setLoading(false);
+			setLoading(false);
 		};
 		fetchAllStories();
 	}, [filter]);
@@ -40,7 +41,7 @@ const TopStories = () => {
 			{loading ? (
 				<Loader />
 			) : (
-				<>
+				<div className='landing__page'>
 					<section>
 						<p className='topStories'>Top stories</p>
 						<Link to='/bookmarks'>
@@ -112,15 +113,15 @@ const TopStories = () => {
 						</section>
 						<section>
 							<Link to={`/${fourthArticle}`} className='card3__noimage'>
-								<div className='card3__noimage--title'>
-									<div className='card3__noimage--rectangle__copy'>
+								<div className='card3__noimage--rectangle__copy'>
+									<div className='card3__noimage--title'>
 										{topStories[3]?.webTitle}
 									</div>
 								</div>
 							</Link>
 							<Link to={`/${fifthArticle}`} className='card3__noimage--right'>
-								<div className='card3__noimage--title'>
-									<div className='card3__noimage--rectangle__copy'>
+								<div className='card3__noimage--rectangle__copy'>
+									<div className='card3__noimage--title'>
 										{topStories[4]?.webTitle}
 									</div>
 								</div>
@@ -129,13 +130,11 @@ const TopStories = () => {
 						<section className='middle__section'>
 							<Link to={`/${sixthArticle}`}>
 								<div className='card4'>
-									{topStories[5]?.fields.thumbnail && (
-										<img
-											src={topStories[5]?.fields.thumbnail}
-											style={{ height: 216, width: 350 }}
-											alt='sixth_article'
-										/>
-									)}
+									<img
+										src={topStories[5]?.fields.thumbnail || Empty_thumbnail}
+										style={{ height: 216, width: 350 }}
+										alt='sixth_article'
+									/>
 									<div className='card4__rectangle--copy2'>
 										<div className='card4__rectangle--copy2__title'>
 											{topStories[5]?.webTitle}
@@ -148,13 +147,11 @@ const TopStories = () => {
 							</Link>
 							<Link to={`/${seventhArticle}`}>
 								<div className='card4__copy'>
-									{topStories[6]?.fields.thumbnail && (
-										<img
-											src={topStories[6]?.fields.thumbnail}
-											style={{ height: 216, width: 350 }}
-											alt='seventh_article'
-										/>
-									)}
+									<img
+										src={topStories[6]?.fields.thumbnail || Empty_thumbnail}
+										style={{ height: 216, width: 350 }}
+										alt='seventh_article'
+									/>
 									<div className='card4__copy__rectangle--copy2'>
 										<div className='card4__copy__rectangle--copy2__title'>
 											{topStories[6]?.webTitle}
@@ -167,13 +164,11 @@ const TopStories = () => {
 							</Link>
 							<Link to={`/${eighthArticle}`}>
 								<div className='card4__copy2'>
-									{topStories[7]?.fields.thumbnail && (
-										<img
-											src={topStories[7]?.fields.thumbnail}
-											style={{ height: 216, width: 350 }}
-											alt='eighth_article'
-										/>
-									)}
+									<img
+										src={topStories[7]?.fields.thumbnail || Empty_thumbnail}
+										style={{ height: 216, width: 350 }}
+										alt='eighth_article'
+									/>
 									<div className='card4__copy2__rectangle--copy2'>
 										<div className='card4__copy2__rectangle--copy2__title'>
 											{topStories[7]?.webTitle}
@@ -193,7 +188,7 @@ const TopStories = () => {
 						<Link to={`/${firstCatArticle}`}>
 							<div className='card4__copy3'>
 								<img
-									src={categoryStories[0]?.fields.thumbnail}
+									src={categoryStories[0]?.fields.thumbnail || Empty_thumbnail}
 									style={{ height: 216, width: 350 }}
 									alt='ninth_article'
 								/>
@@ -207,7 +202,7 @@ const TopStories = () => {
 						<Link to={`/${secondCatArticle}`}>
 							<div className='card4__copy4'>
 								<img
-									src={categoryStories[1]?.fields.thumbnail}
+									src={categoryStories[1]?.fields.thumbnail || Empty_thumbnail}
 									style={{ height: 216, width: 350 }}
 									alt='tenth_article'
 								/>
@@ -221,7 +216,7 @@ const TopStories = () => {
 						<Link to={`/${thirdCatArticle}`}>
 							<div className='card4__copy5'>
 								<img
-									src={categoryStories[2]?.fields.thumbnail}
+									src={categoryStories[2]?.fields.thumbnail || Empty_thumbnail}
 									style={{ height: 216, width: 350 }}
 									alt='eleventh_article'
 								/>
@@ -233,7 +228,7 @@ const TopStories = () => {
 							</div>
 						</Link>
 					</section>
-				</>
+				</div>
 			)}
 		</>
 	);

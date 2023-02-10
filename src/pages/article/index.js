@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import { parse } from 'node-html-parser';
-// TODO: delete parser from package.json
 import { useMatch } from 'react-router-dom';
 import Bookmark from '../../assets/Bookmark.png';
 import Footer from '../../components/footer';
@@ -93,9 +91,7 @@ const Article = () => {
 						<div className='article__subtitle'>{subtitle}</div>
 						<div className='article__line' />
 						<div className='article__body'>
-							<div className='article__body--text'>
-								{body.substring(0, 3000)}
-							</div>
+							<div className='article__body--text'>{body}</div>
 							<div className='article__body__image'>
 								<img src={thumbnail} />
 							</div>

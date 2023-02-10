@@ -1,3 +1,7 @@
+.article {
+	min-height: 1700px;
+}
+
 .article__bookmark {
 	display: flex;
 	flex-direction: row;
@@ -68,7 +72,7 @@
 
 .article__title {
 	width: 635px;
-	height: 117px;
+	max-height: 117px;
 	font-family: 'Georgia';
 	font-style: normal;
 	font-weight: 700;
@@ -86,15 +90,15 @@
 	font-family: 'Georgia';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 26px;
 	letter-spacing: 0.07px;
 	color: rgba(0, 0, 0, 0.87);
-	margin: 50px 0 0;
+	margin-bottom: 10px;
 }
 
 .article__line {
-	position: absolute;
+	/* position: absolute; */
 	height: 2px;
 	width: 636px;
 	left: 0.5px;
@@ -121,7 +125,6 @@
 	line-height: 20px;
 	letter-spacing: 0.1px;
 	color: rgba(0, 0, 0, 0.87);
-	/* margin-top: 30px; */
 }
 
 .article__body__image {

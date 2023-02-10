@@ -8,7 +8,7 @@ In the project directory, you can run:
 npm install
 ```
 
-In src/utility/endpoint.js, please provide your API_KEY to address the endpoint from guardianapis.com
+In src/utility/endpoint.js, please provide your API_KEY to address the endpoint from guardianapis.com.
 
 ## npm start
 
@@ -29,6 +29,8 @@ To not show repititions in the UI, I am using the 'trailtext' instead to create 
 
 Also the wireframes show BST as timezone. The JS-function recognised BST not as 'British Summer Time' but as 'Bangladesh Standard Time'.
 To not show a deviation of +6 hours, the standard UTC is rendered instead.
+
+Snackbars indicate whether the article was added or removed as bookmark.
 
 Pending: ThePeaks logo for articles without thumbnails.
 
