@@ -51,7 +51,7 @@ const Article = () => {
 		day: 'numeric',
 		hour: 'numeric',
 		minute: 'numeric',
-		timeZone: 'UTC',
+		timeZone: 'Europe/London',
 		timeZoneName: 'short',
 	};
 	let formattedTime = new Intl.DateTimeFormat('en-GB', options).format(
