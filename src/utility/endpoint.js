@@ -1,4 +1,4 @@
-const key = 'YOUR_API_KEY';
+const key = process.env.REACT_APP_API_KEY;
 const url = 'https://content.guardianapis.com/search';
 
 export const getTopStories = async filter => {

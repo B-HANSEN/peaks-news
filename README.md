@@ -8,7 +8,8 @@ In the project directory, you can run:
 npm install
 ```
 
-In src/utility/endpoint.js, please provide your API_KEY to address the endpoint from guardianapis.com.
+Create a .env file in the project root folder and insert your guardian.com API_KEY with this pattern:
+REACT_APP_API_KEY = 'YOUR_API_KEY'
 
 ## npm start
 
