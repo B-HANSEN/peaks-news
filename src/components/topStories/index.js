@@ -7,10 +7,10 @@ import { getCategoryStories, getTopStories } from '../../utility/endpoint';
 import './topStories.css';
 
 const TopStories = () => {
-	const [loading, setLoading] = useState(true);
+	const [loading, setLoading] = useState('');
 	const [topStories, setTopStories] = useState([]);
 	const [categoryStories, setCategoryStories] = useState([]);
-	const [filter, setFilter] = useState('new');
+	const [filter, setFilter] = useState('');
 
 	useEffect(() => {
 		const fetchAllStories = async () => {
@@ -56,8 +56,11 @@ const TopStories = () => {
 						</Link>
 						<select
 							id='time'
-							// defaultValue='new'
-							onChange={e => setFilter(e.target.value)}
+							value={filter}
+							onChange={e => {
+								setLoading(true);
+								setFilter(e.target.value);
+							}}
 							className='dropdown'
 						>
 							<option value='new'>Newest first</option>
