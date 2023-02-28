@@ -29,7 +29,7 @@ const Article = () => {
 		if (localStorage.getItem(articleId)) {
 			setBookmarkState('remove');
 		} else setBookmarkState('add');
-	}, []);
+	}, [article?.content.id]);
 
 	const timestamp = article?.content.webPublicationDate;
 	const title = article?.content.webTitle;

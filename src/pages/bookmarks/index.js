@@ -9,6 +9,8 @@ const Bookmarks = () => {
 	const [filter, setFilter] = useState('old');
 	const [result, setResult] = useState([]);
 
+	const NoFavourites = 'You do not have any bookmarks yet.';
+
 	useEffect(() => {
 		let storageObject = { ...localStorage };
 		let arr = [];
@@ -59,9 +61,13 @@ const Bookmarks = () => {
 						<option value='old'>Oldest first</option>
 					</select>
 				</section>
-				<div className='bookmarks__contents'>
-					<Cards />
-				</div>
+				{result.length !== 0 ? (
+					<div className='bookmarks__contents'>
+						<Cards />
+					</div>
+				) : (
+					<div className='bookmarks__noResults'>{NoFavourites}</div>
+				)}
 			</div>
 			<Footer />
 		</>

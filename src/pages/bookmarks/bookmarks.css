@@ -63,3 +63,12 @@
 	color: #ffffff;
 	margin: 0px 10px 3px;
 }
+
+.bookmarks__noResults {
+	position: absolute;
+	top: 300px;
+	left: 300px;
+	font-family: 'Georgia';
+	font-size: 20px;
+	line-height: 29px;
+}
